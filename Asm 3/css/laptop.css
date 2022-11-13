@@ -1,0 +1,305 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1200px;
+}
+
+#banner {
+  position: relative;
+}
+
+#banner #name {
+  position: absolute;
+  color: white;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+}
+
+#banner img {
+  width: 100%;
+  height: auto;
+  filter: brightness(0.5);
+}
+
+#nav-bar nav {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+#nav-bar nav>*+* {
+  border-left: 1px solid #f3f3f3;
+}
+
+#nav-bar nav>* {
+  padding: 10px 20px;
+  align-items: center;
+  display: flex;
+}
+
+#nav-bar nav>div {
+  text-transform: uppercase;
+}
+
+#nav-bar nav>div i {
+  padding-right: 5px;
+  color: #31a7df;
+}
+
+#nav-bar nav>div a {
+  color: black;
+}
+
+#nav-bar nav #second-name {
+  text-align: center;
+  text-transform: none;
+  display: block;
+}
+
+#about>div {
+  padding: 20px 50px;
+}
+
+#about #target {
+  background-color: #f5f5f5;
+}
+
+#about #personal-info {
+  background-color: #f0f0f0;
+}
+
+#about #personal-info ul li span {
+  font-weight: bold;
+}
+
+#job-info {
+  margin: 20px 0;
+}
+
+#job-info span.label {
+  background-color: #149ddf;
+  color: white;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+
+#job-info .row>div {
+  border: 1px solid #ececec;
+  padding: 20px 10px;
+}
+
+#job-info .row>div>ul {
+  margin-left: 20px;
+}
+
+#job-info .row>div>ul>li {
+  margin-bottom: 20px;
+}
+
+#job-info .row>div>ul>li.blue::before {
+  content: "•";
+  color: #149ddf;
+  /* Change the color */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+#job-info .row>div>ul>li div {
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: inline;
+}
+
+#job-info .row>div>ul>li p {
+  margin: 0;
+}
+
+#job-info .row>div>ul>li span {
+  display: inline-block;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+#job-info .row>div>ul>li ul {
+  margin-top: 20px;
+  list-style-type: "-";
+  margin-left: 10px;
+}
+
+#job-info .row>div .telescope {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 0;
+}
+
+#job-info .row>div .telescope li i {
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #149ddf;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #149ddf;
+  width: 20px;
+  height: 20px;
+}
+
+#job-info .row h1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#job-info .list-skill {
+  display: flex !important;
+  margin-top: 10px;
+}
+
+#job-info .list-skill div {
+  width: 50px;
+  height: 3px;
+  background-color: #f6f6f6;
+}
+
+#job-info .list-skill .completed {
+  background-color: #31a7df;
+}
+
+#job-info .list-skill>*+* {
+  margin-left: 15px;
+}
+
+#certificate {
+  margin: 20px 0;
+  padding: 20px 30px;
+  background-color: #f7f7f7;
+}
+
+#certificate .container>ul>li {
+  padding: 20px;
+  margin: 20px 0;
+  border-bottom: 1px solid #ebe4db;
+  border-left: 1px solid #ebe4db;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#certificate .container>ul>li div {
+  margin-left: 20px;
+}
+
+#certificate .container>ul>li ul {
+  list-style: decimal;
+  margin: 20px;
+}
+
+#certificate .container>ul>li p {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#certificate .container>ul>li:last-child,
+#certificate .container>ul li:nth-last-child(2):nth-child(odd) {
+  border-bottom: none;
+  border-left: none;
+}
+
+#certificate .container>ul>li:first-child {
+  border-left: none;
+}
+
+#certificate .container>ul img {
+  width: 100%;
+  height: auto;
+}
+
+#project {
+  margin: 50px 0;
+}
+/* 
+#project ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+} */
+
+#project ul li img {
+  width: 100%;
+  height: auto;
+}
+
+#project ul li h3 {
+  border: 1px solid #f7f7f7;
+  border-bottom-color: transparent;
+  padding: 10px 20px 0;
+}
+
+#project ul li>div {
+  display: flex;
+  align-items: center;
+  border: 1px solid #f7f7f7;
+  padding: 10px 20px 10px;
+}
+
+#project ul li>div>*+* {
+  margin-left: 10px;
+}
+
+#project ul li>div div {
+  display: flex;
+  align-items: center;
+}
+
+#project ul li>div span.label {
+  border-radius: 20px;
+  background-color: #149ddf;
+  color: white;
+  display: block;
+  padding: 5px 10px;
+}
+
+#project .col>div:not(:nth-child(3)) div:first-child {
+  width: 40%;
+}
+
+#footer {
+  background-color: #f7f7f7;
+  padding: 30px 0 50px;
+  text-align: center;
+}
+
+#footer ul {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+#footer ul i {
+  color: #149ddf;
+}
+
+#footer ul>li+li {
+  margin-left: 20px;
+}

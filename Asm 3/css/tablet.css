@@ -1,0 +1,17 @@
+@media (max-width: 991px) {
+    #nav-bar {
+      font-size: 13px;
+    }
+    #nav-bar nav #second-name div {
+      display: none;
+    }
+    #project ul {
+      font-size: 13px;
+    }
+    #project li > div {
+      flex-wrap: wrap;
+    }
+    #footer ul {
+      font-size: 15px;
+    }
+  }
